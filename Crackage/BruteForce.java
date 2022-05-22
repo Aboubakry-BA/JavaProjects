@@ -29,9 +29,17 @@ public class BruteForce implements Attack {
                             for (int n = 0; n < tab.length; n++) {
                                 String test6 = test5 + "" + String.valueOf(tab[n]);
                                 System.out.println(test6);
-                                if (test5.equals(psw)) {
+                                if (test6.equals(psw)) {
                                     System.out.println("Le mot de passe est " + test6);
                                     return;
+                                }
+                                for (int o = 0; o < tab.length; o++) {
+                                    String test7 = test6 + "" + String.valueOf(tab[o]);
+                                    System.out.println(test7);
+                                    if (test7.equals(psw)) {
+                                        System.out.println("Le mot de passe est " + test7);
+                                        return;
+                                    }
                                 }
                             }
                         }
