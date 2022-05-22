@@ -33,14 +33,6 @@ public class BruteForce implements Attack {
                                     System.out.println("Le mot de passe est " + test6);
                                     return;
                                 }
-                                for (int o = 0; o < tab.length; o++) {
-                                    String test7 = test6 + "" + String.valueOf(tab[o]);
-                                    System.out.println(test7);
-                                    if (test7.equals(psw)) {
-                                        System.out.println("Le mot de passe est " + test7);
-                                        return;
-                                    }
-                                }
                             }
                         }
                     }
